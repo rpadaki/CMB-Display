@@ -1,0 +1,102 @@
+<html>
+<head>
+	<title>DISPLAY</title>
+</head>
+<body>
+	<article id="header-box">
+		<div id="page-title">Header</div>
+	</article>
+	<div id="content">
+		<div id="text">Lorem ipsum dolor sit amet.</div>
+		<div class="visual" id="image"></div>
+		<div class="visual" id="explanation"></div>
+		<div class="visual" id="map"></div>
+	</div>
+</body>
+</html>
+
+<style>
+body {
+	font-weight: bold;
+	font-family: "Century Gothic", "Avant Garde Gothic", "Avant Garde", "URW Gothic L", helvetica, sans-serif;
+	background-image: url("images/back.jpg");
+	background-size: cover;
+	padding: 40px;
+}
+
+img {
+	max-height: 100%;
+	max-width: 100%;
+	width: auto;
+	height: auto;
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	margin: auto;
+}
+
+#image {
+	position: relative;
+}
+
+#page-title {
+	text-align: center;
+	font-size : 4vw;
+	transition: 0.5s;
+	-webkit-transition: 0.5s;
+}
+
+#content {
+	padding:5px;
+	background: rgba(0,0,0,0);
+	display: -ms-flexbox;
+	display: -webkit-flex;
+	display: flex;
+	-webkit-flex-wrap: wrap;
+	transition: 0.5s;
+	-webkit-transition: 0.5s;
+}
+
+#text {
+	text-align: center;
+	font-size: 4vw;
+	background: rgba(150,100,100,0.6);
+	color: rgb(200,200,200);
+}
+
+#content > div {
+	border-style: solid;
+	border-color: black;
+	transition: 1s;
+	-webkit-transition: 1s;
+}
+
+#text {
+	width: 100%;
+	max-height: 20%;
+	padding: 10px;
+}
+
+.visual {
+	height: 50%;
+	flex-grow: 1;
+	width:0;
+	min-height: 200px;
+	background: rgba(200,200,200,0.6);
+	padding: 10px;
+}
+
+#explanation {
+	font-size: 2vw;
+}
+
+#map {
+	background: white;
+}
+
+.clear {
+	color: rgba(0,0,0,0);
+}
+</style>
